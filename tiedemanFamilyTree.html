@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="treeview.js"></script>
+        <link rel="stylesheet" href="css/treeview.css">
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+            .tree{
+                margin-left: 37%;
+            }
+        </style>
+    </head>
+<body>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="menu">
+        <div class="menu-content">
+        <ul>
+            <li><a href="#">WHO</a></li>
+            <li><a href="#">WHAT</a></li>
+            <li><a href="#">FAMILIES</a></li>
+            <li><a href="#">EPISODES</a></li>
+            <li><a href="#">FAMILY TREE</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <div id="background-container">
+        <video id="background-video" autoplay muted loop>
+          <source src="./assets/clouds.mp4" type="video/mp4">
+        </video>
+      </div>
+    <div class="tree">
+        <ul>
+            <li>
+                <a href="#">  <img src="assets/dorisTiedeman.png" alt="parent"> </a>
+                Doris Tiedeman
+
+                <a href="#">  <img src="assets/egonTiedeman.png" alt="parent"> </a>
+                Egon Tiedeman
+
+                <ul>
+                    <li>
+                        Caludia Tiedeman
+                        <a href="#">  <img src="assets/claudiaTiedeman.png" alt="parent"> </a>
+
+                        <ul>
+                            <li>
+                                <a href="#">  <img src="assets/reginaTiedeman.png" alt="parent"> </a>
+                                 Regina Tiedeman
+                                 <ul>
+                                    <li>
+                                        Bartosz Tiedeman
+
+                                        <a href="#">  <img src="assets/bartoszTiedeman.png" alt="parent"> </a>
+                                    </li>
+                                  </ul>
+                                <li>
+                                
+                                </li>
+
+                                 <a href="#">  <img src="assets/aleksanderTiedeman.png" alt="parent"> </a>
+                                  <br> Aleksander Tiedeman
+                                  
+                                </li>
+                            </ul>
+                            </li>
+                        </ul>
+                    
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

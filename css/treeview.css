@@ -1,24 +1,13 @@
 /*Now the CSS*/
 * {margin: 0; padding: 0;}
-video#background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; /* Ensure the video covers the entire width */
-    height: 100%; /* Ensure the video covers the entire height */
-    object-fit: cover; /* Ensure the video fills the entire container without distortion */
-    z-index: -1;
-    transition: opacity 1s ease;
-    filter: brightness(50%);
 
-  }
   
   .tree {
-    margin: 0 auto; /* This centers the .tree container horizontally */
+    margin-top: 5%;
+    margin-left: 30%;
     text-align: center; /* This centers the content inside the .tree container */
     width: 80%; /* Adjust the width of the tree container as needed */
     max-width: 800px; /* Optional: set a maximum width for the tree container */
-    margin-top:12%;
 }
 .tree ul {
 	padding-top: 20px; position: relative;
@@ -33,6 +22,7 @@ video#background-video {
 	list-style-type: none;
 	position: relative;
 	padding: 20px 5px 0 5px;
+    color: rgb(170, 166, 166);
 	
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
