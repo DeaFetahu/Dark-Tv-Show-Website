@@ -1,0 +1,62 @@
+video#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the video covers the entire width */
+    height: 100%; /* Ensure the video covers the entire height */
+    object-fit: cover; /* Ensure the video fills the entire container without distortion */
+    z-index: -1;
+    transition: opacity 1s ease;
+    filter: brightness(50%);
+
+  }
+/* Menu styles */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(16, 16, 16);
+    color: white;
+    padding: 20px;
+    width: 300px;
+    padding-top: 40px;
+    height: 100vh;
+    transition: width 0.3s, transform 0.6s; /* Add transform for smooth animation */
+    transform: translateX(-340px); /* Initially move menu out of view */
+  }
+  
+  .menu.active {
+    transform: translateX(0); /* Move menu into view */
+  }
+  
+  .menu-toggle {
+    position: fixed;
+    top: 20px; /* Adjust position as needed */
+    left: 20px; /* Adjust position as needed */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: left 0.6s ease;
+  }
+  
+  .menu-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-content ul li {
+    padding: 10px 0;
+    margin-top: 23px;
+    border-bottom: 0.5px solid #ccc; 
+  }
+  
+  .menu-content ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 10px;
+  }
+ 
