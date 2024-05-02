@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="treeview.js"></script>
+    <link rel="stylesheet" href="treeview.css">
+</head>
+<body>
+<div id="background-container">
+    <video id="background-video" autoplay muted loop>
+        <source src="./assets/clouds.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div class="tree">
+    <ul>
+        <li>
+            <a href="#">
+                <img src="assets/berndDoppler.png" alt="Parent">
+            </a>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="assets/gretaDoppler.png" alt="Child">
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="assets/helgeDoppler.png" alt="Child">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/questionMark.png" alt="Child">
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">Great Grand Child</a>
+                                </li>
+                                <li>
+                                    <a href="#">Great Grand Child</a>
+                                </li>
+                                <li>
+                                    <a href="#">Great Grand Child</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
