@@ -1,0 +1,36 @@
+body{
+background-color: black;}
+#portfolio {
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.project {
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project img {
+    width: 220px;
+    height: auto;
+    color: white;
+
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+
+}
+
+.project p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+}
