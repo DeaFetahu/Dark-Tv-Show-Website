@@ -24,13 +24,6 @@ button.cursor = 'pointer';
 // Add to the stage
 app.stage.addChild(button);
 
-// Listen for a click/tap event to start playing the video
-// this is useful for some mobile platforms. For example:
-// ios9 and under cannot render videos in PIXI without a
-// polyfill - https://github.com/bfred-it/iphone-inline-video
-// ios10 and above require a click/tap event to render videos
-// that contain audio in PIXI. Videos with no audio track do
-// not have this requirement
 button.on('pointertap', onPlayVideo);
 
 function onPlayVideo()

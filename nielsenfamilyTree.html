@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="treeview.js"></script>
+        <link rel="stylesheet" href="css/treeview.css">
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <div class="menu">
+            <div class="menu-content">
+            <ul>
+                <li><a href="#">WHO</a></li>
+                <li><a href="#">WHAT</a></li>
+                <li><a href="#">FAMILIES</a></li>
+                <li><a href="#">EPISODES</a></li>
+                <li><a href="#">FAMILY TREE</a></li>
+            </ul>
+            </div>
+        </div>
+
+        <div id="background-container">
+            <video id="background-video" autoplay muted loop>
+              <source src="./assets/clouds.mp4" type="video/mp4">
+            </video>
+          </div>
+          
+        <div class="tree" style="margin-left: 500px ; margin-top: 100px;">
+            <ul>
+                <li>
+                    <a href="#">  <img src="assets/janaNielsen.jpg" alt="parent"> </a>
+                        Jana Nielsen
+                    <ul>
+                        <li>
+                            <a href="#">  <img src="assets/madsNielsen.jpg" alt="Child"></a>
+                            <br>
+                            Mads Nielsen
+                            
+                        </li>
+                        <li>
+                            <a href="#">  <img src="assets/katharinaNielsen.jpg" alt="Child"></a>  
+                           Katarina Nielsen
+                            <a href="#">  <img src="assets/ulrichNielsen.jpg" alt="Child"></a>     
+                            Ulrich Nielsen           
+                      
+                            <ul>
+                                <li>
+                                    <a href="#">  <img src="assets/magnusNielsen.jpg" alt="Child"></a>   
+                                    <br> 
+                                    Magnus Nielsen
+                                    <li>
+                                   <a href="#">  <img src="assets/marthaNielsen.jpg" alt="Child"></a>  
+                                   <br>
+                                     Martha Nielsen
+                                    </li>   
+                                    
+                                    <li>
+                                    <a href="#">  <img src="assets/mikkelNielsen.jpg" alt="Child"></a>  
+                                    <br>
+                                    Mikkel Nielsen
+                                   </li>
+                                </li>
+                                                   
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>

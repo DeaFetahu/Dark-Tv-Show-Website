@@ -60,3 +60,26 @@ video#background-video {
     letter-spacing: 10px;
   }
  
+  
+.project {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80px;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  color: white;
+  
+}
+
+
+.project p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: white;
+}
