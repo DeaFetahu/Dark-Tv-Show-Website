@@ -1,103 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixi.js Project</title>
-    <!-- Include Pixi.js library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.3/pixi.min.js"></script>
-    <!-- Include CSS styles -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Movie | Portfolio</title>
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/portfolio.css">
-</head>
+	       
+</head><!--/head-->
 <body>
-    <!-- Pixi.js canvas for the game -->
-    <div id="game-container"></div>
+    <header id="header">
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Portfolio</a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="movieSelected.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li>
+                        <a href="#">Pages </a>
+                           
+                        </li>
+                        <li><a href="blog.html">Blog</a></li> 
+                        <li><a href="contact-us.html">Contact</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+	</header><!--/header-->
 
-    <!-- Portfolio section -->
-    <div id="portfolio">
-        <h2 style="color: white;">My Movie & Tv Show Portfolio </h2>
-        <div class="project" id="project1">
-            <img src="./assets/darkPoster.jpg" alt="Project 1 Thumbnail">
-            <h3>Dark</h3>
-            <p>Tv Show <br>
-            Category: mistery, thriller, sci-fi</p>
+    <section id="about-us">
+            <div id="portfolio">
+                <h2 style="color: white;">My Movie & Tv Show Portfolio </h2>
+                <div class="project" id="project1">
+                    <img src="./assets/darkPoster.jpg" alt="Project 1 Thumbnail">
+                    <h3>Dark</h3>
+                    <p>Tv Show <br>
+                    Category: mistery, thriller, sci-fi</p>
+                </div>
+                <div class="project" id="project2">
+                    <img src="./assets/dunePoster.jpg" alt="Project 2 Thumbnail">
+                    <h3>Dune</h3>
+                    <p>Movie <br>
+                    Category: sci-fi, action,</p>
+                </div>
+                <div class="project" id="project2">
+                    <img src="./assets/suitsPoster.jpg" alt="Project 2 Thumbnail">
+                    <h3>Suits</h3>
+                    <p>Tv Show <br>
+                    Category:</p>
+                </div>
+                <div class="project" id="project2">
+                    <img src="./assets/friends.jpg" alt="Project 2 Thumbnail">
+                    <h3>Friends</h3>
+                    <p>Tv Show <br>
+                    Category:</p>
+                </div>
+                <div class="project" id="project2">
+                    <img src="./assets/interstellarPoster.jpg" alt="Project 2 Thumbnail">
+                    <h3>Interstellar</h3>
+                    <p>Tv Show <br>
+                        Category:</p>
+                </div>
+                <div class="project" id="project2">
+                    <img src="./assets/hungerGamesPoster.jpg" alt="Project 2 Thumbnail">
+                    <h3>The Hunger Games </h3>
+                    <p>Saga <br>
+                        Category:</p>
+                </div>
+                <div class="project" id="project2">
+                    <img src="./assets/divergentPoster.jpg" alt="Project 2 Thumbnail">
+                    <h3>Divergent</h3>
+                    <p>Saga <br>
+                        Category:</p>
+                </div>
+                <div class="project" id="project2">
+                    <img src="./assets/harryPotter.jpg" alt="Project 2 Thumbnail">
+                    <h3>Harry Potter</h3>
+                    <p>Saga <br>
+                        Category:</p>
+                </div>
+                <div class="project" id="project2">
+                    <img src="./assets/takenPoster.jpeg" alt="Project 2 Thumbnail">
+                    <h3>Taken</h3>
+                    <p>Saga <br>
+                        Category:</p>
+                </div>
+                <div class="project" id="project2">
+                    <img src="./assets/queensGambitPoster.jpg" alt="Project 2 Thumbnail">
+                    <h3>Queen's Gambit</h3>
+                    <p>Movie <br>
+                        Category:</p>
+                </div>
+                <div class="project" id="project2">
+                    <img src="./assets/spykidsPoster.jpg" alt="Project 2 Thumbnail">
+                    <h3>Spy Kids</h3>
+                    <p>Saga <br>
+                        Category:</p>
+                </div>
+                <div class="project" id="project2">
+                    <img src="./assets/gotPoster.jpg" alt="Project 2 Thumbnail">
+                    <h3>Believe Me</h3>
+                    <p>Movie <br>
+                        Category:</p>
+                </div>
+                <div class="project" id="project2">
+                    <img src="./assets/lucyPoster.jpg" alt="Project 2 Thumbnail">
+                    <h3>Lucy</h3>
+                    <p>Movie <br>
+                        Category:</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        
+            <!-- Include JavaScript file -->
+            <script src="./scripts/portfolio.js"></script>
+			
+    </section><!--/about-us-->
+	
+ <!--  <section id="bottom">
+        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="row">
+                
         </div>
-        <div class="project" id="project2">
-            <img src="./assets/dunePoster.jpg" alt="Project 2 Thumbnail">
-            <h3>Dune</h3>
-            <p>Movie <br>
-            Category: sci-fi, action,</p>
-        </div>
-        <div class="project" id="project2">
-            <img src="./assets/suitsPoster.jpg" alt="Project 2 Thumbnail">
-            <h3>Suits</h3>
-            <p>Tv Show <br>
-            Category:</p>
-        </div>
-        <div class="project" id="project2">
-            <img src="./assets/friends.jpg" alt="Project 2 Thumbnail">
-            <h3>Friends</h3>
-            <p>Tv Show <br>
-            Category:</p>
-        </div>
-        <div class="project" id="project2">
-            <img src="./assets/interstellarPoster.jpg" alt="Project 2 Thumbnail">
-            <h3>Interstellar</h3>
-            <p>Tv Show <br>
-                Category:</p>
-        </div>
-        <div class="project" id="project2">
-            <img src="./assets/hungerGamesPoster.jpg" alt="Project 2 Thumbnail">
-            <h3>The Hunger Games </h3>
-            <p>Saga <br>
-                Category:</p>
-        </div>
-        <div class="project" id="project2">
-            <img src="./assets/divergentPoster.jpg" alt="Project 2 Thumbnail">
-            <h3>Divergent</h3>
-            <p>Saga <br>
-                Category:</p>
-        </div>
-        <div class="project" id="project2">
-            <img src="./assets/harryPotter.jpg" alt="Project 2 Thumbnail">
-            <h3>Harry Potter</h3>
-            <p>Saga <br>
-                Category:</p>
-        </div>
-        <div class="project" id="project2">
-            <img src="./assets/takenPoster.jpeg" alt="Project 2 Thumbnail">
-            <h3>Taken</h3>
-            <p>Saga <br>
-                Category:</p>
-        </div>
-        <div class="project" id="project2">
-            <img src="./assets/queensGambitPoster.jpg" alt="Project 2 Thumbnail">
-            <h3>Queen's Gambit</h3>
-            <p>Movie <br>
-                Category:</p>
-        </div>
-        <div class="project" id="project2">
-            <img src="./assets/spykidsPoster.jpg" alt="Project 2 Thumbnail">
-            <h3>Spy Kids</h3>
-            <p>Saga <br>
-                Category:</p>
-        </div>
-        <div class="project" id="project2">
-            <img src="./assets/gotPoster.jpg" alt="Project 2 Thumbnail">
-            <h3>Believe Me</h3>
-            <p>Movie <br>
-                Category:</p>
-        </div>
-        <div class="project" id="project2">
-            <img src="./assets/lucyPoster.jpg" alt="Project 2 Thumbnail">
-            <h3>Lucy</h3>
-            <p>Movie <br>
-                Category:</p>
-        </div>
-        <!-- Add more projects as needed -->
-    </div>
+    </section><!--/#bottom-->
 
-    <!-- Include JavaScript file -->
-    <script src="./scripts/portfolio.js"></script>
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Faq</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+    
+
 </body>
 </html>

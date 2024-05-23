@@ -23,7 +23,7 @@ button.cursor = 'pointer';
 
 // Add to the stage
 app.stage.addChild(button);
-
+    
 button.on('pointertap', onPlayVideo);
 
 function onPlayVideo()

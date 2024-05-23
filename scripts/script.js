@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.querySelector('.main-content').style.display = 'block';
       // Add the class to make the video visible
       document.getElementById('background-video').classList.add('video-visible');
-    });
+    },4000);
 });
 
 // Function to handle "Continue" button click
@@ -41,3 +41,13 @@ function toggleMenu() {
   }
 }
 
+// Add cursor movement logic
+document.body.addEventListener("mousemove", evt => {
+  const mouseX = evt.clientX;
+  const mouseY = evt.clientY;
+  
+  // Set cursor position
+  const cursor = document.querySelector('.cursor');
+  cursor.style.left = mouseX + 'px';
+  cursor.style.top = mouseY + 'px';
+});
