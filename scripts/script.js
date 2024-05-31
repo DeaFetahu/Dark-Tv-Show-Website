@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.querySelector('.main-content').style.display = 'block';
       // Add the class to make the video visible
       document.getElementById('background-video').classList.add('video-visible');
-    },4000);
+    });
 });
 
 // Function to handle "Continue" button click

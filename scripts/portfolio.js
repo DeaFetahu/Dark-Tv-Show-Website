@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Define the mapping of project names to URLs
             const projectUrls = {
-                'Dark': 'darkMain.html',
-                'Dune': 'duneMain.html',
-                'Spectre': 'spectreMain.html'
+                'Dark': 'Movies/Dark/darkMain.html',
+                'Dune': 'Movies/Dune/duneMain.html',
+                'Spectre': 'Movies/Spectre/spectreMain.html'
                 // Add more project names and URLs as needed
             };
 
