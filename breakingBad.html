@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Collapsible Menu -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <div class="menu">
+        <div class="menu-content">
+            <ul>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#whoMenu">WHO</a>
+                    <div class="collapse" id="whoMenu">
+                      <ul>
+                        <li>
+                            <div class="project" id="project1">
+                                <img src="./assets/walterwhite.png" alt="Project 1 Thumbnail">
+                                <p>Walter<br> White</p>
+                            </div>  
+                                  <div class="project" id="project2">
+                                      <img src="./assets/jessepinkman.png" alt="Project 2 Thumbnail">
+                                      <p>Jesse <br> Pinkman</p>
+                                  </div>
+                                    <div class="project" id="project2">
+                                      <img src="./assets/skylarwhite.png" alt="Project 2 Thumbnail">
+                                      <p>Skyler <br> White</p>
+                                  </div>
+                                  <div class="project" id="project2">
+                                    <img src="./assets/saulgoodman.png" alt="Project 2 Thumbnail">
+                                    <p>Saul <br> Goodman</p>
+                                  </div>
+                                  <div class="project" id="project2">
+                                    <img src="./assets/hankShrader.jpeg" alt="Project 2 Thumbnail">
+                                    <p>Hank <br> Schrader </p>
+                                    </div>
+                                  <div class="project" id="project2">
+                                      <img src="./assets/gustavofring.png" alt="Project 2 Thumbnail">
+                                      <p>Gustavo <br> Fring</p>
+                                  </div>
+                                  <div class="project" id="project2">
+                                    <img src="./assets/marieschrader.png" alt="Project 2 Thumbnail">
+                                    <p>Marie <br> Schrader</p>
+                                </div>
+                              <div class="project" id="project2">
+                                <img src="./assets/mikeehrmantraut.png " alt="Project 2 Thumbnail">
+                                <p>Mike <br> Ehrmantraut</p>
+                            </div>
+                            <div class="project" id="project2">
+                              <img src="./assets/walterwhitejr.png" alt="Project 2 Thumbnail">
+                              <p> Walter <br> White Jr</p>
+                          </div>
+                          <div class="project" id="project2">
+                            <img src="./assets/hectorsalamanca.jpeg" alt="Project 2 Thumbnail">
+                            <p>Hector <br> Salamanca</p>
+                        </div>
+                        <div class="project" id="project2">
+                          <img src="./assets/tucosalamanca.jpeg" alt="Project 2 Thumbnail">
+                          <p>Tuco <br> Salamanca</p>
+            
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#whatMenu">SEASONS</a>
+                    <div class="collapse" id="whatMenu">
+                        <ul>
+                            <li>
+                              <div class="project" id="project2">
+                                <img src="./assets/season1.jpeg" alt="Project 2 Thumbnail">
+                                <p>Season 1</p>
+                              </div>
+                              <div class="project" id="project2">
+                                <img src="./assets/season2.jpg" alt="Project 2 Thumbnail">
+                                <p>Season 2</p>
+                              </div>
+                              <div class="project" id="project2">
+                                <img src="./assets/season3.jpg" alt="Project 2 Thumbnail">
+                                <p>Season 3</p>
+                              </div>
+                              <div class="project" id="project2">
+                                <img src="./assets/season4.jpeg" alt="Project 2 Thumbnail">
+                                <p>Season 4 </p>
+                              </div>
+                              <div class="project" id="project2">
+                                <img src="./assets/season5.jpeg" alt="Project 2 Thumbnail">
+                                <p>Season 5</p>
+                              </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#What">WHAT</a>
+                </li>                
+               
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Video background -->
+    <div id="background-container">
+        <video id="background-video" autoplay muted loop>
+            <source src="./assets/breakingBad.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <!-- Content -->
+    <div class="content">
+        <div class="loading-container">
+            <div class="eight-loading">
+                <video id="main-video" autoplay muted loop>
+                    <source src="./assets/infinity.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <!-- Text container for "DARK" -->
+        <div class="text-container">
+            <h1 class="dark-text">Breaking Bad</h1>
+            <h1 class="dark-text continue-button" onclick="continueClicked()">Continue</h1>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include your custom JavaScript file -->
+    <script src="./scripts/script.js"></script>
+    <div class="cursor"></div>
+</body>
+</html>
