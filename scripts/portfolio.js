@@ -9,7 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
             const projectUrls = {
                 'Dark': 'Movies/Dark/darkMain.html',
                 'Dune': 'Movies/Dune/duneMain.html',
-                'Spectre': 'Movies/Spectre/spectreMain.html'
+                'Spectre': 'Movies/Spectre/spectreMain.html',
+                'Breaking Bad':' Movies/BreakingBad/breakingBad.html'
+
+
                 // Add more project names and URLs as needed
             };
 
