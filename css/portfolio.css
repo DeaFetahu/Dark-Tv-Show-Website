@@ -34,3 +34,28 @@ background-color: black;}
     font-size: 14px;
     color: white;
 }
+/*video brenda p*/
+.media-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.media-container img {
+    display: block;
+    width: 220px;
+    height: auto;
+}
+
+.media-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
+    display: none;
+}
+
+.project:hover .media-container video {
+    display: block;
+}
