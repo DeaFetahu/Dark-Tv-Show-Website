@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Movie | Portfolio</title>
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/aboutPortfolio.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+	       
+</head><!--/head-->
+<body>
+    <header id="header">
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Portfolio</a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="portfolio.html">Home</a></li>
+                        <li ><a href="aboutPortfolio.html">About My Portfolio</a></li>
+                        <li><a href="tvShows.html">Tv Shows</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="contact-us.html">See more</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+	</header><!--/header-->
+
+    <section id="about-us">
+          <h1 class="fade-in" style="text-align: center;">About Our Portfolio</h1>
+          <br>
+          <img class="fade-in" src="/assets/aboutUsMain.jpg">
+          <br>
+          <div class="about-paragraph">
+         <p> Welcome to our portfolio! <br><br>We are two passionate students with a deep love for movies and TV shows. 
+            Over the years, we have spent countless hours exploring a vast variety of genres, directors, and storylines, and our shared
+             enthusiasm has driven us to create this portfolio. <br><br>In this space, you will find a curated selection of our top favorite choices 
+             in movies and TV shows, each carefully chosen to represent the best in entertainment.We believe that movies and TV shows are
+              more than just a form of entertainment; they are powerful mediums that can evoke emotions, spark conversations, and inspire 
+              change. Through this portfolio, we hope to share our insights, reviews, and recommendations with fellow enthusiasts and 
+              anyone looking to discover new and exciting content. <br><br> Thank you for visiting our portfolio. We invite you to explore,
+               enjoy, and perhaps find your next favorite movie or TV show. Feel free to reach out to us with your thoughts, suggestions,
+                or just to share your love for cinema. Let's embark on this cinematic journey together!</p>
+          </div>
+
+          <p style="text-align: center;     font-weight: 20;
+          "> Take a quick look on our movies and tv shows</p>
+            <br>
+          <div class="slider-container">
+            <div class="slider-wrapper" id="slider-wrapper">
+                <div class="slider-item"><img src="/assets/gotPoster.jpg" alt="Photo 1"></div>
+                <div class="slider-item"><img src="/assets/darkPoster.jpg" alt="Photo 2"></div>
+                <div class="slider-item"><img src="/assets/takenPoster.jpeg" alt="Photo 3"></div>
+                <div class="slider-item"><img src="/assets/dunePoster.jpg" alt="Photo 4"></div>
+                <div class="slider-item"><img src="/assets/spectrePoster.jpg" alt="Photo 5"></div>
+                <div class="slider-item"><img src="/assets/suitsPoster.jpg" alt="Photo 6"></div>
+                <div class="slider-item"><img src="/assets/divergentPoster.jpg" alt="Photo 7"></div>
+                <div class="slider-item"><img src="/assets/hungerGamesPoster.jpg" alt="Photo 8"></div>
+                <div class="slider-item"><img src="/assets/interstellarPoster.jpg" alt="Photo 9"></div>
+                <div class="slider-item"><img src="/assets/breakingBad.jpeg" alt="Photo 10"></div>
+                <div class="slider-item"><img src="/assets/lucyPoster.jpg" alt="Photo 10"></div>
+                <div class="slider-item"><img src="/assets/harryPotter.jpg" alt="Photo 10"></div>
+                <div class="slider-item"><img src="/assets/friends.jpg" alt="Photo 10"></div>
+                <div class="slider-item"><img src="/assets/queensGambitPoster.jpg" alt="Photo 10"></div>
+                <div class="slider-item"><img src="/assets/spykidsPoster.jpg" alt="Photo 10"></div>
+
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+	
+ <!--  <section id="bottom">
+        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="row">
+                
+        </div>
+    </section><!--/#bottom-->
+
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Faq</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="/scripts/slideshow.js"></script>
+    <script src="/scripts/script.js"></script>
+</body>
+</html>

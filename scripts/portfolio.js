@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'Dune': 'Movies/Dune/duneMain.html',
                 'Spectre': 'Movies/Spectre/spectreMain.html',
                 'Breaking Bad':' Movies/BreakingBad/breakingBad.html',
-                'Suits':'suitsMain.html',
+                'Suits':'Movies/Suits/suitsMain.html',
 
 
                 // Add more project names and URLs as needed
@@ -25,6 +25,23 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Handle cases where no URL is defined for the clicked project
                 alert('No URL defined for this project');
             }
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var projects = document.querySelectorAll('.project');
+
+    projects.forEach(function(project) {
+        var video = project.querySelector('video');
+
+        project.addEventListener('mouseenter', function() {
+            video.play();
+        });
+
+        project.addEventListener('mouseleave', function() {
+            video.pause();
+            video.currentTime = 0;
         });
     });
 });
