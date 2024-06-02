@@ -12,6 +12,7 @@
 <body>
     <!-- Collapsible Menu -->
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <a href="../../portfolio.html" ><button id="myButton">Back to home</button></a>
 
     <div class="menu">
         <div class="menu-content">
@@ -141,14 +142,31 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">EPISODES</a></li>
-                <li><a href="#">FAMILY TREE</a></li>
+                <li>
+                  <a href="#" data-toggle="collapse" data-target="#episodesMenu">SEASONS</a>
+                  <div class="collapse" id="episodesMenu">
+                      <ul>
+                          <li>
+                            <div class="project" id="project2">
+                              <img src="../../assets/darkSeason1.png" alt="Project 2 Thumbnail">
+                              <p>Season one</p>
+                            </div>
+                            <div class="project" id="project2">
+                              <img src="../../assets/darkSeason2.png" alt="Project 2 Thumbnail">
+                              <p>Season two</p>
+                            </div>
+                            <div class="project" id="project2">
+                              <img src="../../assets/darkSeason3.png" alt="Project 2 Thumbnail">
+                              <p>Season three</p>
+                            </div>
+                          </li>
+                      </ul>
+                  </div>
+              </li>
             </ul>
         </div>
     </div>
 
-
-    <!-- Video background -->
     <div id="background-container">
         <video id="background-video" autoplay muted loop>
             <source src="../../assets/clouds.mp4" type="video/mp4">

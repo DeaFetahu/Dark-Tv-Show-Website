@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'Spectre': 'Movies/Spectre/spectreMain.html',
                 'Breaking Bad':' Movies/BreakingBad/breakingBad.html',
                 'Suits':'Movies/Suits/suitsMain.html',
-
+                'Friends':'Movies/Friends/friendsMain.html',
 
                 // Add more project names and URLs as needed
             };

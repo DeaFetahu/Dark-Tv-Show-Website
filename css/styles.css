@@ -69,3 +69,14 @@ body {
       transform: scale(1);
     }
   }
+
+  #myButton {
+    position: fixed;
+    top: 20px;
+    right: 5%;
+    transform: translateX(50%);
+    background-color: #000;
+    color: white;
+    border: none;
+    opacity: 0.9;
+}

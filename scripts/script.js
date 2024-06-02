@@ -10,21 +10,18 @@ document.addEventListener("DOMContentLoaded", function() {
       document.querySelector('.main-content').style.display = 'block';
       // Add the class to make the video visible
       document.getElementById('background-video').classList.add('video-visible');
-    });
+    });// dont forget to add 4000
 });
 
-// Function to handle "Continue" button click
 function continueClicked() {
-    // Redirect to the second page (Main.html)
     window.location.href = "secondPage.html";
 }
 
-// Fade in the "Continue" button after a delay
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
       var continueButton = document.querySelector('.continue-button');
       continueButton.style.display = 'block'; // Show the button
-    }, 6500); // Adjust the delay as needed
+    }, 6500); 
 });
 
 function toggleMenu() {
