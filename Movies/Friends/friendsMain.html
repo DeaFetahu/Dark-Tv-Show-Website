@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="../../css/menu.css">
     <!-- Include Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Collapsible Menu -->
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <a href="../../portfolio.html" ><button id="myButton">Back to home</button></a>
-
-
     <div class="menu">
         <div class="menu-content">
             <ul>
@@ -144,7 +143,11 @@
             </ul>
         </div>
     </div>
-
+    <audio id="background-audio" autoplay loop>
+      <source src="../../assets/friendsAudio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <i id="audio-control" class="fas fa-volume-up fa-2x" onclick="toggleAudio()"></i>
     <div id="background-container">
         <video id="background-video" autoplay muted loop>
             <source src="../../assets/friendsMain.mp4" type="video/mp4">
@@ -173,6 +176,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Include your custom JavaScript file -->
     <script src="../../scripts/script.js"></script>
+    <script src="../../scripts/audio.js"></script>
     <div class="cursor"></div>
 </body>
 </html>
