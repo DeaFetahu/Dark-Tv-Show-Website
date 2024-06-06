@@ -13,7 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 'Breaking Bad':' Movies/BreakingBad/breakingBad.html',
                 'Suits':'Movies/Suits/suitsMain.html',
                 'Friends':'Movies/Friends/friendsMain.html',
-
+                'Interstellar':'Movies/Interstellar/interstellarMain.html',
+                'The Hunger Games':'Movies/TheHungerGames/hungerGamesMain.html',
+                'Harry Potter':'Movies/HarryPotter/harryPotterMain.html',
                 // Add more project names and URLs as needed
             };
 
