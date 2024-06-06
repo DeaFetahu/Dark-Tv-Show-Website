@@ -21,3 +21,4 @@ function moveSlide(step) {
     }
     sliderWrapper.style.transform = `translateX(-${(currentSlideIndex / totalSlides) * 100}%)`;
 }
+

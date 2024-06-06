@@ -80,3 +80,12 @@ body {
     border: none;
     opacity: 0.9;
 }
+
+#audio-control{
+  position: fixed;
+	color: white;
+  bottom: 20px; 
+  right: 40px; 
+  z-index: 999;
+
+}
