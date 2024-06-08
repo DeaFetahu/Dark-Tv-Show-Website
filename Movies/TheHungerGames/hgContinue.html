@@ -28,7 +28,6 @@
             </div>
         </div>
     </div>
-
     <div style="background-color:#000000">
         <br><br><br>
         <h1 style="margin-left: 80px;">Watch Trailer</h1>
@@ -36,16 +35,11 @@
             <iframe id="trailerVideo" src="https://m.imdb.com/video/embed/vi1657581337/?vPage=1" width="100%" height="500px" frameborder="0"></iframe>
         </div>
     </div>
-
     <div class="overlay"></div>
-
     <script>
         function scrollToTrailer() {
-            // Calculate the offset of the trailer video section from the top of the page
             const trailerSection = document.getElementById('trailerVideo');
             const offset = trailerSection.offsetTop;
-
-            // Scroll to the offset with smooth behavior
             window.scrollTo({
                 top: offset,
                 behavior: 'smooth'

@@ -10,7 +10,6 @@ video#background-video {
     filter: brightness(50%);
 
   }
-
 .menu {
     position: fixed;
     top: 0;
@@ -25,14 +24,12 @@ video#background-video {
     transform: translateX(-425px); 
     overflow-y: auto;
   }
-  
   .menu::-webkit-scrollbar {
     width: 0; /
 }
   .menu.active {
     transform: translateX(0); 
   }
-  
   .menu-toggle {
     position: fixed;
     top: 20px; 
@@ -45,8 +42,6 @@ video#background-video {
     transition: left 0.6s ease;
     z-index: 1;
   }
-  
-  
   .menu-content ul {
     list-style-type: none;
     padding: 0;
@@ -65,8 +60,7 @@ video#background-video {
     font-weight: 100;
     letter-spacing: 10px;
   }
- 
-  
+
 .project {
   display: inline-block;
   margin-bottom: 20px;
@@ -82,8 +76,6 @@ video#background-video {
   color: white;
   
 }
-
-
 .project p {
   margin-top: 5px;
   font-size: 14px;
@@ -92,14 +84,13 @@ video#background-video {
 
 .cursor {
   position: fixed;
-  width: 50px; /* Adjust size of the cursor */
-  height: 50px; /* Adjust size of the cursor */
+  width: 50px; 
+  height: 50px; 
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
-  /* Add a box shadow to create a faded circle */
   box-shadow: 0 0 100px 5px rgba(255, 255, 255, 0.6), 0 0 30px 20px rgba(255, 255, 255, 0.3);
-  animation: cursorMove 2s infinite alternate; /* Add animation for slower movement */
+  animation: cursorMove 2s infinite alternate; 
 }
 
 @keyframes cursorMove {

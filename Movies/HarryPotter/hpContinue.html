@@ -41,11 +41,8 @@
 
     <script>
         function scrollToTrailer() {
-            // Calculate the offset of the trailer video section from the top of the page
             const trailerSection = document.getElementById('trailerVideo');
             const offset = trailerSection.offsetTop;
-
-            // Scroll to the offset with smooth behavior
             window.scrollTo({
                 top: offset,
                 behavior: 'smooth'

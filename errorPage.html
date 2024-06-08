@@ -16,8 +16,7 @@
             background-size: 30%;
             background-position:bottom center;
             background-repeat: no-repeat; 
-            background-color: black;
-            
+            background-color: black;   
         }
         canvas {
             display: block;
@@ -37,7 +36,6 @@
                     </button>
                     <a class="navbar-brand" href="index.html">Portfolio</a>
                 </div>
-				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><a href="portfolio.html">Home</a></li>
@@ -60,51 +58,30 @@
         });
         document.body.appendChild(app.view);
         const texture = PIXI.Texture.from('./assets/hammer.png');
-
-        // Create a sprite using the loaded texture
         const sprite = new PIXI.Sprite(texture);
-
-        // Set the anchor point to the center of the sprite
         sprite.anchor.set(0.5);
         sprite.scale.set(0.2);
-
-        // Position the sprite at the center of the screen
         sprite.x = app.screen.width / 2;
         sprite.y = app.screen.height / 2;
-
-        // Add the sprite to the stage
         app.stage.addChild(sprite);
 
-        // Define the target position where the sprite will move
         const target = new PIXI.Point();
 
-        // Function to reset the target position
         function resetTarget() {
             target.x = Math.random() * app.screen.width;
             target.y = Math.random() * app.screen.height;
         }
-
-        // Initial call to set the first target position
         resetTarget();
 
-        // Function to animate the sprite movement
         function animate() {
-            // Move the sprite towards the target position
             sprite.x += (target.x - sprite.x) * 0.05;
             sprite.y += (target.y - sprite.y) * 0.05;
-
-            // If the sprite is close enough to the target, reset the target position
             if (Math.abs(sprite.x - target.x) < 1 && Math.abs(sprite.y - target.y) < 1) {
                 resetTarget();
             }
-
-            // Request animation frame for smooth animation
             requestAnimationFrame(animate);
         }
-
-        // Start the animation
         animate();
     </script>
 </body>
-
 </html>

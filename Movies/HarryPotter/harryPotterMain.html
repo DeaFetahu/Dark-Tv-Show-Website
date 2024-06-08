@@ -6,15 +6,12 @@
     <title>Your Website Title</title>
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/menu.css">
-    <!-- Include Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <!-- Collapsible Menu -->
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <a href="../../portfolio.html" ><button id="myButton">Back to home</button></a>
-
     <div class="menu">
         <div class="menu-content">
             <ul>
@@ -152,7 +149,6 @@
                     <a href="#" data-toggle="collapse" data-target="#What">WHAT</a>
                     <div class="collapse" id="What">
                         <ul>
-
                           <li>
                             <div class="project" id="project2">
                               <img src="../../assets/tomriddlediary.png" alt="Project 2 Thumbnail">
@@ -186,7 +182,6 @@
                         </ul>
                     </div>
                 </li>                
-               
             </ul>
         </div>
     </div>
@@ -195,16 +190,12 @@
         Your browser does not support the audio element.
       </audio>
       <i id="audio-control" class="fas fa-volume-up fa-2x" onclick="toggleAudio()"></i>
-    
-    <!-- Video background -->
-    <div id="background-container">
+        <div id="background-container">
         <video id="background-video" autoplay muted loop>
             <source src="../../assets/harryPotterMain.mp4" type="video/mp4">
         </video>
     </div>
-    
-    <!-- Content -->
-    <div class="content">
+        <div class="content">
         <div class="loading-container">
             <div class="eight-loading">
                 <video id="main-video" autoplay muted loop>
@@ -212,18 +203,14 @@
                 </video>
             </div>
         </div>
-        <!-- Text container for "DARK" -->
         <div class="text-container">
             <h1 class="dark-text">Harry Potter</h1>
             <h1 class="dark-text continue-button" data-url="hpContinue.html">Continue</h1>
         </div>
     </div>
-
-    <!-- Include Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Include your custom JavaScript file -->
     <script src="../../scripts/script.js"></script>
     <script src="../../scripts/audio.js"></script>
     <div class="cursor"></div>

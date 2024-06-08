@@ -4,8 +4,6 @@ background-color: black;}
     margin-top: 50px;
     margin-left: 70px;
 }
-
-
 .project {
     display: inline-block;
     margin-right: 25px;
@@ -15,21 +13,18 @@ background-color: black;}
     border-radius: 5px;
     cursor: pointer;
 }
-
 .project img {
     width: 220px;
     height: auto;
     color: white;
 
 }
-
 .project h3 {
     margin-top: 10px;
     font-size: 18px;
     color: white;
 
 }
-
 .project p {
     margin-top: 5px;
     font-size: 14px;
@@ -56,7 +51,6 @@ background-color: black;}
     width: 220px;
     display: none;
 }
-
 .project:hover .media-container video {
     display: block;
 }

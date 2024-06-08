@@ -1,16 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Get the loading container and text container
     var loadingContainer = document.querySelector('.loading-container');
     var textContainer = document.querySelector('.text-container');
-  
-    // After 4 seconds, hide the loading container, show the text container and main content
-    setTimeout(function() {
+      setTimeout(function() {
       loadingContainer.style.display = 'none';
       textContainer.style.display = 'block';
       document.querySelector('.main-content').style.display = 'block';
-      // Add the class to make the video visible
       document.getElementById('background-video').classList.add('video-visible');
-    },2500);// dont forget to add 4000
+    },2500);
 });
 
 document.querySelectorAll('.continue-button').forEach(button => {
@@ -23,8 +19,8 @@ document.querySelectorAll('.continue-button').forEach(button => {
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
       var continueButton = document.querySelector('.continue-button');
-      continueButton.style.display = 'block'; // Show the button
-    }, 6500); 
+      continueButton.style.display = 'block'; 
+    }, 4500); 
 });
 
 function toggleMenu() {
@@ -32,22 +28,17 @@ function toggleMenu() {
   var menuToggle = document.querySelector('.menu-toggle');
   
   menu.classList.toggle('active');
-  
-  // Update position of menu toggle button when menu is opened or closed
-  if (menu.classList.contains('active')) {
-    menuToggle.style.left = '340px'; // Adjust position based on menu width
+    if (menu.classList.contains('active')) {
+    menuToggle.style.left = '340px'; 
   } else {
-    menuToggle.style.left = '20px'; // Reset position when menu is closed
+    menuToggle.style.left = '20px'; 
   }
 }
 
-// Add cursor movement logic
 document.body.addEventListener("mousemove", evt => {
   const mouseX = evt.clientX;
   const mouseY = evt.clientY;
-  
-  // Set cursor position
-  const cursor = document.querySelector('.cursor');
+    const cursor = document.querySelector('.cursor');
   cursor.style.left = mouseX + 'px';
   cursor.style.top = mouseY + 'px';
 });

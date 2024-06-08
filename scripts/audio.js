@@ -1,5 +1,4 @@
 
-      // Function to toggle audio playback
       function toggleAudio() {
           var audio = document.getElementById("background-audio");
           var audioControl = document.getElementById("audio-control");

@@ -6,7 +6,6 @@ p {
     font-weight: 20;
 
   }
-
   /*css per fade-in animacionin tek foto kryesore*/
   .fade-in {
 	-webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -70,7 +69,6 @@ p {
   }
   
 /* Slideshow css*/
-
 .slider-container {
     position: relative;
     width: 100%;
@@ -79,24 +77,20 @@ p {
     background-color: #000000;
     border: 1px solid #000000;
 }
-
 .slider-wrapper {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-
 .slider-item {
     min-width: 6.5%;
     box-sizing: border-box;
     padding: 10px;
 }
-
 .slider-item img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -112,15 +106,12 @@ p {
     user-select: none;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 .prev {
     left: 0;
 }
-
 .next {
     right: 0;
 }
-
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
