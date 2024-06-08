@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'Interstellar':'Movies/Interstellar/interstellarMain.html',
                 'The Hunger Games':'Movies/TheHungerGames/hungerGamesMain.html',
                 'Harry Potter':'Movies/HarryPotter/harryPotterMain.html',
+                'Game Of Thrones':'Movies/GameOfThrones/gameOfThronesMain.html',
                 // Add more project names and URLs as needed
             };
 

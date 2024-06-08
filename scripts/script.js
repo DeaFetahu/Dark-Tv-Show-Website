@@ -10,12 +10,15 @@ document.addEventListener("DOMContentLoaded", function() {
       document.querySelector('.main-content').style.display = 'block';
       // Add the class to make the video visible
       document.getElementById('background-video').classList.add('video-visible');
-    });// dont forget to add 4000
+    },2500);// dont forget to add 4000
 });
 
-function continueClicked() {
-    window.location.href = "secondPage.html";
-}
+document.querySelectorAll('.continue-button').forEach(button => {
+  button.addEventListener('click', function() {
+      const url = this.getAttribute('data-url');
+      window.location.href = url;
+  });
+});
 
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {

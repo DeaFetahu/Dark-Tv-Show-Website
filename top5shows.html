@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixiJS Hover Effect</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+    <script src="https://pixijs.download/v6.1.0-rc.4/pixi.min.js"></script>
+    <style>
+    canvas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+            width: 100vw;
+            background-color: #000000;
+        }
+      body{
+        background-color: black;
+      }
+
+      p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        font-size: xx-large;
+        color: white;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Portfolio</a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="portfolio.html">Home</a></li>
+                        <li ><a href="aboutPortfolio.html">About My Portfolio</a></li>
+                        <li><a href="top5shows.html">Top Movies</a></li>
+                        <li><a href="top5.html">Top Movies</a></li>
+                        <li><a href="contact-us.html">See more</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+	</header>
+    <br><br>
+    <br><br>
+    <p>TOP 5 BEST RATED MOVIES ACCORDING TO IMDb</p>
+    
+    <script>
+        // Create a Pixi Application
+        let app = new PIXI.Application({
+            width: 1200,         // Increased width of the canvas
+            height: 300,        // Adjusted height of the canvas
+            antialias: true,    // default: false
+            transparent: false, // default: false
+            resolution: 1       // default: 1
+        });
+
+        // Add the canvas that Pixi automatically created for you to the HTML document
+        document.body.appendChild(app.view);
+
+        // Array to hold card textures
+        let cardTextures = [];
+
+        // Load images
+        PIXI.Loader.shared
+            .add([
+                'assets/pixi1.png',
+                'assets/pixi2.png',
+                'assets/pixi3.png',
+                'assets/pixi4.png',
+                'assets/pixi5.png',
+
+            ])
+            .load(setup);
+
+        function setup(loader, resources) {
+            // Create cards 
+            for (let i = 0; i < 5; i++) { // Change 5 to 4 since you're loading 4 images
+                let card = new PIXI.Sprite(resources[`assets/pixi${i + 1}.png`].texture); // Adjust image name
+                card.anchor.set(0.5);
+                card.x = (i * (150 + 40)) + 250; // Adjusted x position with margin and card width
+                card.y = app.screen.height / 2;
+                card.interactive = true;
+                card.scale.set(0.5); // Adjusted scale to fit within canvas
+
+                // Scale up on hover
+                card.on('pointerover', () => {
+                    card.scale.set(0.6); // Increase scale on hover
+                });
+
+                // Scale down on hover out
+                card.on('pointerout', () => {
+                    card.scale.set(0.5); // Reset scale on hover out
+                });
+
+                app.stage.addChild(card);
+            }
+        }
+    </script>
+</body>
+</html>

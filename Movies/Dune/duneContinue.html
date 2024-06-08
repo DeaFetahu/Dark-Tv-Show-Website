@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/continuePage.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <a href="duneMain.html" ><button id="myButton">Back to main</button></a>
+        <div class="container_content">
+            <div class="container_content_inner">
+                <div class="title">
+                    <h1>Movie Description</h1>
+                </div>
+                <div class="par">
+                    <p>Dune is set in the distant future in a feudal interstellar society in which various noble houses control planetary fiefs. It tells the story of young Paul Atreides, whose family accepts the stewardship of the planet Arrakis. While the planet is an inhospitable and sparsely populated desert wasteland, it is the only source of melange, or "spice", a drug that extends life and enhances mental abilities. </p>
+                </div>
+                <div class="btns">
+                    <button class="btns_more" onclick="scrollToTrailer()">See Trailer</button>
+                </div>
+            </div>
+        </div>
+        <div class="container_outer_img">
+            <div class="img-inner">
+                <iframe class="container_img" src="../../assets/duneContinue.html" width="100%" height="600px" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <div style="background-color:#000000">
+        <br><br><br>
+        <h1 style="margin-left: 80px;">Watch Trailer</h1>
+        <div style="margin-left: 120px; margin-right:120px; height: 625px; padding: 30px;">
+            <iframe id="trailerVideo" src="https://m.imdb.com/video/embed/vi3049046297/?vPage=1" width="100%" height="500px" frameborder="0"></iframe>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <script>
+        function scrollToTrailer() {
+            const trailerSection = document.getElementById('trailerVideo');
+            const offset = trailerSection.offsetTop;
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
