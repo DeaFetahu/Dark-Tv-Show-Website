@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Image with PixiJS</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+    <script src="https://pixijs.download/v6.1.0-rc.4/pixi.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-image: url('./assets/errorPage.webp'); 
+            background-size: 30%;
+            background-position:bottom center;
+            background-repeat: no-repeat; 
+            background-color: black;
+            
+        }
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Portfolio</a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="portfolio.html">Home</a></li>
+                        <li ><a href="aboutPortfolio.html">About My Portfolio</a></li>
+                        <li><a href="top5shows.html">Top Tv Shows</a></li>
+                        <li><a href="top5.html">Top Movies</a></li>
+                        <li><a href="errorPage.html">See more</a></li>                   
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	</header>
+    <script>
+        let app = new PIXI.Application({
+            width: 1200,         
+            height: 500,        
+            antialias: true,    
+            transparent: true, 
+            resolution: 1  
+        });
+        document.body.appendChild(app.view);
+        const texture = PIXI.Texture.from('./assets/hammer.png');
+
+        // Create a sprite using the loaded texture
+        const sprite = new PIXI.Sprite(texture);
+
+        // Set the anchor point to the center of the sprite
+        sprite.anchor.set(0.5);
+        sprite.scale.set(0.2);
+
+        // Position the sprite at the center of the screen
+        sprite.x = app.screen.width / 2;
+        sprite.y = app.screen.height / 2;
+
+        // Add the sprite to the stage
+        app.stage.addChild(sprite);
+
+        // Define the target position where the sprite will move
+        const target = new PIXI.Point();
+
+        // Function to reset the target position
+        function resetTarget() {
+            target.x = Math.random() * app.screen.width;
+            target.y = Math.random() * app.screen.height;
+        }
+
+        // Initial call to set the first target position
+        resetTarget();
+
+        // Function to animate the sprite movement
+        function animate() {
+            // Move the sprite towards the target position
+            sprite.x += (target.x - sprite.x) * 0.05;
+            sprite.y += (target.y - sprite.y) * 0.05;
+
+            // If the sprite is close enough to the target, reset the target position
+            if (Math.abs(sprite.x - target.x) < 1 && Math.abs(sprite.y - target.y) < 1) {
+                resetTarget();
+            }
+
+            // Request animation frame for smooth animation
+            requestAnimationFrame(animate);
+        }
+
+        // Start the animation
+        animate();
+    </script>
+</body>
+
+</html>
