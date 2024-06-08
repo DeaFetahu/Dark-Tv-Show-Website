@@ -50,7 +50,7 @@
                         <li ><a href="aboutPortfolio.html">About My Portfolio</a></li>
                         <li><a href="top5shows.html">Top Tv Shows</a></li>
                         <li><a href="top5.html">Top Movies</a></li>
-                        <li><a href="errorPage.html">See more</a></li>                       
+                        <li><a href="errorPage.html">See more</a></li>                        
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -79,11 +79,11 @@
         // Load images
         PIXI.Loader.shared
             .add([
-                'assets/pixi1.png',
-                'assets/pixi2.png',
-                'assets/pixi3.png',
-                'assets/pixi4.png',
-                'assets/pixi5.png',
+                'assets/pixii1.png',
+                'assets/pixii2.png',
+                'assets/pixii3.png',
+                'assets/pixii4.png',
+                'assets/pixii5.png',
 
             ])
             .load(setup);
@@ -91,21 +91,21 @@
         function setup(loader, resources) {
             // Create cards 
             for (let i = 0; i < 5; i++) { // Change 5 to 4 since you're loading 4 images
-                let card = new PIXI.Sprite(resources[`assets/pixi${i + 1}.png`].texture); // Adjust image name
+                let card = new PIXI.Sprite(resources[`assets/pixii${i + 1}.png`].texture); // Adjust image name
                 card.anchor.set(0.5);
                 card.x = (i * (150 + 40)) + 250; // Adjusted x position with margin and card width
                 card.y = app.screen.height / 2;
                 card.interactive = true;
-                card.scale.set(0.5); // Adjusted scale to fit within canvas
+                card.scale.set(0.3); // Adjusted scale to fit within canvas
 
                 // Scale up on hover
                 card.on('pointerover', () => {
-                    card.scale.set(0.6); // Increase scale on hover
+                    card.scale.set(0.35); // Increase scale on hover
                 });
 
                 // Scale down on hover out
                 card.on('pointerout', () => {
-                    card.scale.set(0.5); // Reset scale on hover out
+                    card.scale.set(0.3); // Reset scale on hover out
                 });
 
                 app.stage.addChild(card);

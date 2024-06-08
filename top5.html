@@ -96,16 +96,16 @@
                 card.x = (i * (150 + 40)) + 250; // Adjusted x position with margin and card width
                 card.y = app.screen.height / 2;
                 card.interactive = true;
-                card.scale.set(0.5); // Adjusted scale to fit within canvas
+                card.scale.set(0.3); // Adjusted scale to fit within canvas
 
                 // Scale up on hover
                 card.on('pointerover', () => {
-                    card.scale.set(0.6); // Increase scale on hover
+                    card.scale.set(0.35); // Increase scale on hover
                 });
 
                 // Scale down on hover out
                 card.on('pointerout', () => {
-                    card.scale.set(0.5); // Reset scale on hover out
+                    card.scale.set(0.3); // Reset scale on hover out
                 });
 
                 app.stage.addChild(card);
