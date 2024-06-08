@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/continuePage.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <a href="interstellarMain.html" ><button id="myButton">Back to main</button></a>
+        <div class="container_content">
+            <div class="container_content_inner">
+                <div class="title">
+                    <h1>Movie Description</h1>
+                </div>
+                <div class="par">
+                    <p>Set in a dystopian future where Earth is suffering from catastrophic blight and famine, the film follows a group of astronauts who travel through a wormhole near Saturn in search of a new home for humankind.</p>
+                </div>
+                <div class="btns">
+                    <button class="btns_more" onclick="scrollToTrailer()">See Trailer</button>
+                </div>
+            </div>
+        </div>
+        <div class="container_outer_img">
+            <div class="img-inner">
+                <iframe class="container_img" src="../../assets/interstellarContinue.html" width="100%" height="600px" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color:#000000">
+        <br><br><br>
+        <h1 style="margin-left: 80px;">Watch Trailer</h1>
+        <div style="margin-left: 120px; margin-right:120px; height: 625px; padding: 30px;">
+            <iframe id="trailerVideo" src="https://m.imdb.com/video/embed/vi2658773017/?vPage=1" width="100%" height="500px" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script>
+        function scrollToTrailer() {
+            // Calculate the offset of the trailer video section from the top of the page
+            const trailerSection = document.getElementById('trailerVideo');
+            const offset = trailerSection.offsetTop;
+
+            // Scroll to the offset with smooth behavior
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

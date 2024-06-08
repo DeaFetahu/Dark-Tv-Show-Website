@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/continuePage.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <a href="hungerGamesMain.html" ><button id="myButton">Back to main</button></a>
+        <div class="container_content">
+            <div class="container_content_inner">
+                <div class="title">
+                    <h1>Movie Description</h1>
+                </div>
+                <div class="par">
+                    <p>Every year, in the ruins of what was once North America, the Capitol of the nation of Panem forces each of the 12 districts to send a boy and girl tribute between the ages of 12 and 18 to compete in the Hunger Games: a nationally televised event in which the 'tributes' fight each other to the death until one survivor remains</p>
+                </div>
+                <div class="btns">
+                    <button class="btns_more" onclick="scrollToTrailer()">See Trailer</button>
+                </div>
+            </div>
+        </div>
+        <div class="container_outer_img">
+            <div class="img-inner">
+                <iframe class="container_img" src="../../assets/hungerGamesContinue.html" width="100%" height="600px" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color:#000000">
+        <br><br><br>
+        <h1 style="margin-left: 80px;">Watch Trailer</h1>
+        <div style="margin-left: 120px; margin-right:120px; height: 625px; padding: 30px;">
+            <iframe id="trailerVideo" src="https://m.imdb.com/video/embed/vi1657581337/?vPage=1" width="100%" height="500px" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script>
+        function scrollToTrailer() {
+            // Calculate the offset of the trailer video section from the top of the page
+            const trailerSection = document.getElementById('trailerVideo');
+            const offset = trailerSection.offsetTop;
+
+            // Scroll to the offset with smooth behavior
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
