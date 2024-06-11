@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/continuePage.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <a href="prisonBreak.html" ><button id="myButton">Back to main</button></a>
+        <div class="container_content">
+            <div class="container_content_inner">
+                <div class="title">
+                    <h1>Movie Description</h1>
+                </div>
+                <div class="par">
+                    <p>
+
+                        "Prison Break" is a thrilling TV series centered on Michael Scofield's ingenious plan to break his brother, Lincoln Burrows, out of death row. With a blend of suspense, drama, and intricate plotting, each episode follows their daring escape efforts, navigating through the complexities of prison life while battling adversaries both inside and out. With high stakes and unexpected twists, "Prison Break" keeps viewers hooked with its relentless tension and compelling characters..</p>
+                </div>
+                <div class="btns">
+                    <button class="btns_more" onclick="scrollToTrailer()">See Trailer</button>
+                </div>
+            </div>
+        </div>
+        <div class="container_outer_img">
+            <div class="img-inner">
+                <iframe class="container_img" src="../../assets/pbContinue.html" width="100%" height="600px" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <div style="background-color:#000000">
+        <br><br><br>
+        <h1 style="margin-left: 80px;">Watch Trailer</h1>
+        <div style="margin-left: 120px; margin-right:120px; height: 625px; padding: 30px;">
+            <iframe id="trailerVideo" src="https://m.imdb.com/video/embed/vi2924791577/?vPage=1" width="100%" height="500px" frameborder="0"></iframe>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <script>
+        function scrollToTrailer() {
+            const trailerSection = document.getElementById('trailerVideo');
+            const offset = trailerSection.offsetTop;
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

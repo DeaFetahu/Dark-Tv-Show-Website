@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 'The Hunger Games':'Movies/TheHungerGames/hungerGamesMain.html',
                 'Harry Potter':'Movies/HarryPotter/harryPotterMain.html',
                 'Game Of Thrones':'Movies/GameOfThrones/gameOfThronesMain.html',
+                'Prison Break':'Movies/PrisonBreak/prisonBreak.html'
             };
             if (projectUrls.hasOwnProperty(projectName)) {
                 window.location.href = projectUrls[projectName];
